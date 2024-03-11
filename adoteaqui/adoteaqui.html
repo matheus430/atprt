@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adote aqui</title>
+
+    <link rel="icon" href="../img-testest1/logo_7-removebg-preview.png" />
+
+    <link rel="stylesheet" href="stylesAdoteAqui.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-style bg-dark">
+      <a href="index.html" class="logo-style-img">
+        <img
+          src="/img-testest1/logo_7-removebg-preview.png"
+          alt="logo-do-site"
+          id="logo-style"
+          class="img-fluid"
+        />
+      </a>
+
+      <nav class="nav-style navbar navbar-expand-lg navbar-dark">
+        <ul id="ul-style" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link texto-menu" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-menu" href="/adoteaqui/adoteaqui.html"
+              >Adote aqui</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ! inicio main -->
+
+    <main class="main-card">
+      <div id="container-produto" class="stilo-card">
+        <img src="" alt="" />
+
+        <legend></legend>
+
+        <button id="stilo-button" onclick="selectOption()"></button>
+      </div>
+      <!-- ! Formulario para solicitar adocao -->
+
+      <section class="section-form">
+        <form action="" method="get" id="form-adc">
+          <h3 class="div-teste">Formulário para adoção</h3>
+          <hr />
+
+          <fieldset class="div-teste">
+            <legend>Sobre você</legend>
+            <label for="nome"> Seu nome completo :</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Insira seu nome..."
+              required
+            />
+
+            <label for="email"> Informe seu e-mail :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Insira seu e-mail..."
+              required
+            />
+
+            <label for="telefone"> Informe seu número :</label>
+            <input
+              type="number"
+              name="telefone"
+              id="telefone"
+              placeholder="Seu número de contato..."
+              required
+            />
+
+            <label for="documento"> Anexe seu documento COM FOTO:</label>
+            <input type="file" name="documento" id="documento" required />
+          </fieldset>
+
+          <fieldset class="div-teste">
+            <legend>Sobre segurança</legend>
+            <label for="descricao"> Por qual motivo quer adotar?</label>
+
+            <textarea
+              type="text"
+              name="justificativa"
+              id="descricao"
+              placeholder="Insira uma justificativa plausível..."
+              style="width: 250px; height: 20px; resize: none"
+              required
+            ></textarea>
+
+            <!-- ! aqui nessa parte do form, para tornar obrigatoria a selecao das opcoes de seguranca, eh necesario deixar o atributo value vazio das tags option Selecione uma das opções... ficando: value="" -->
+
+            <label for="atitude">Se o animal miar em excesso?</label>
+
+            <select name="select" id="selectCuidadoAnimal" required>
+              <option value="" disabled selected>
+                Selecione uma das opções...
+              </option>
+              <option value="atitudeTapa">Dou um tapa</option>
+              <option value="atitudeProcuroAlgo">Procuro algo de errado</option>
+              <option value="atitudeVet">Levo ao veterinário</option>
+            </select>
+
+            <label for="seguranca">Logradouro tem fácil acesso a rua?</label>
+
+            <select name="select" id="selectAcessoRua" required>
+              <option value="" disabled selected>
+                Selecione uma das opções...
+              </option>
+              <option value="segurancaAcessoSim">Sim</option>
+              <option value="segurancaAcessoNao">Não</option>
+            </select>
+
+            <label for="local">É possível readequar o espaço?</label>
+            <select name="select" id="selectEspacoIdeal" required>
+              <option value="" disabled selected>
+                Selecione uma das opções...
+              </option>
+              <option value="localReadequarSim">Sim</option>
+              <option value="localReadequarNao">Não</option>
+            </select>
+          </fieldset>
+
+          <!-- ! criando opcoes dinamicamente -->
+          <fieldset class="div-teste">
+            <legend for="animalEscolha">Seu novo pet</legend>
+
+            <select name="select" id="selectanimalEscolha" required>
+              <option value="" disabled selected id="option-test">
+                Selecione uma das opções...
+              </option>
+            </select>
+
+            <span id="showSelectedPet"></span>
+          </fieldset>
+
+          <div id="div-botao">
+            <input
+              type="submit"
+              id="enviar"
+              name="enviar"
+              onclick="alertSubmitForm()"
+            />
+          </div>
+        </form>
+        <div id="div-informativo">
+          <span>
+            <h3>
+              <i
+                class="fa-solid fa-triangle-exclamation"
+                style="color: #ff0000"
+              ></i>
+              Ao enviar seu formulário, devido período necessário para análise,
+              pedimos um prazo de 7 dias úteis para retorno.
+            </h3>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ! Banner -->
+
+    <img
+      src="/img-testest1/banner3editado.jpg"
+      id="banner-styles"
+      alt="banner-logo"
+    />
+
+    <!-- ! rodape -->
+
+    <footer id="footer-div">
+      <span>
+        <b>Desenvolvido por Matheus dos Santos Lopes ©</b>
+
+        <b> XD </b>
+
+        <a href="https://github.com/matheus430" target="_blank">
+          <i class="fa-brands fa-github" id="rodape-icon"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/matheuslindosembarba/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin" id="rodape-icon1"></i>
+        </a>
+      </span>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/40d1f06a2e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/adoteaqui/adote.js
+  "></script>
+</html>

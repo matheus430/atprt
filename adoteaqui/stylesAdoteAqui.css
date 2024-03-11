@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Anton, Agbalumo, fantasy, sans-serif;
+}
+
+.header-style {
+  height: 100px;
+  width: 100%;
+  background-image: url("https://br.virbac.com/files/live/sites/virbac-br/files/predefined-files/banners/Cats/Banner_Gato.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-style {
+  font-family: Anton, Agbalumo, fantasy, sans-serif;
+  width: 100%;
+}
+
+#ul-style {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#logo-style {
+  width: 70px;
+  height: 50px;
+}
+
+.texto-menu {
+  color: #ffe44d;
+  font-size: 25px;
+  width: 300px;
+  text-shadow: 3px 3px #042940;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  transform: 0.2s;
+  z-index: 3;
+}
+
+.texto-menu:hover {
+  color: #ffffff;
+  text-shadow: 3px 3px #005c53, 5px 5px #042940;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  z-index: 2;
+}
+
+/* estilizacao do banner */
+
+#banner-styles {
+  position: fixed;
+  opacity: 20%;
+  z-index: -1;
+  width: 100%;
+  top: 90px;
+}
+
+/* ! aqui eh somente formulario ESTILIZACAO*/
+.section-form {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  z-index: 2;
+  top: 0px;
+  position: fixed;
+  margin-left: 1430px;
+  width: 20%;
+}
+
+form {
+  margin-top: 8rem;
+  font-family: Anton, Agbalumo, fantasy, sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+  text-shadow: 1px 1px white, 2px 2px #f2f2f2;
+  /*  z-index: -1;*/
+}
+
+fieldset {
+  margin: 1rem;
+}
+
+#div-informativo {
+  width: 150px;
+  margin-top: 10rem;
+  margin-left: 15px;
+  letter-spacing: 0.1rem;
+  font-family: Anton, Agbalumo, fantasy, sans-serif;
+  text-shadow: 1px 1px white, 2px 2px #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.div-teste {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* estilizacao do botao formulario */
+
+#div-botao {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+#enviar {
+  width: 50px;
+  height: 30px;
+  border-radius: 20%;
+  border: none;
+  color: #f2f2f2;
+  background-color: #f31414;
+  text-transform: lowercase;
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+}
+
+#enviar:hover {
+  width: 70px;
+  height: 30px;
+  border-radius: 25%;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  background-color: rgb(129, 255, 129);
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+  transition: 0.3s ease-in-out;
+}
+
+#enviar:active {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+/* estilo rodape */
+
+#rodape-icon {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000;
+}
+
+#rodape-icon1 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000;
+}
+
+#footer-div {
+  background-color: #f2f2f2;
+  text-align: center;
+  opacity: 98%;
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+  height: 3rem;
+}
+
+/* ! estilizacao dos cards */
+
+#container-produto {
+  display: grid;
+  grid-template-areas:
+    " 1 1 1 "
+    " 1 1 1 "
+    " 1 1 1 ";
+  width: 50%;
+  gap: 2rem;
+  margin: 0.5rem;
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+}
+
+img.stilo-card {
+  border-radius: 50%;
+  border: solid 4px #f2f2f2;
+  width: 400px;
+  height: 400px;
+  margin-top: 10rem;
+  box-shadow: 1px 1px 5px 5px #595959;
+  scale: 0.9;
+  opacity: 83%;
+}
+
+img.stilo-card:hover {
+  opacity: 100%;
+  scale: 1;
+  transition: 0.5s ease-in-out;
+  border: solid 4px #ffe44d;
+  box-shadow: 1px 1px 5px 5px #d9d9d9;
+}
+
+.main-card {
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px white, 2px 2px #f2f2f2;
+}
+
+.alinha-card {
+  padding: 0.5rem;
+}
+
+#stilo-button {
+  align-content: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 20%;
+  border: none;
+  color: black;
+  background-color: #ffe44d;
+  text-transform: lowercase;
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+}
+
+#stilo-button:hover {
+  width: 70px;
+  height: 40px;
+  border-radius: 25%;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  background-color: rgb(129, 255, 129);
+  box-shadow: 1px 1px 5px 5px #f2f2f2;
+  transition: 0.3s ease-in-out;
+  visibility: visible;
+}
+
+#stilo-button:active {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
